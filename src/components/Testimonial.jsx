@@ -52,7 +52,7 @@ const Testimonial = () => {
                           <img
                             src={data.image}
                             className="size-14 rounded-full object-contain"
-                            alt=""
+                            alt={data.name} loading="lazy"
                           />
                           <div className="flex flex-col">
                             <h2 className="text-xl font-semibold">

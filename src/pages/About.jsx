@@ -11,17 +11,17 @@ const About = () => {
     <>
       <Pagination name="About" />
       <Container className="mt-6">
-        <div className="flex flex-col gap-12 md:flex-row md:justify-between md:items-center">
+        <div className="flex flex-col gap-12 md:flex-row md:items-center md:justify-between">
           <div className="flex flex-col items-center gap-10 md:items-start">
             <div className="flex flex-col items-center gap-2 md:items-start">
               <h3 className="text-center text-xl font-medium text-color-50">
                 About Us
               </h3>
-              <h1 className="text-center text-3xl font-bold lg:text-3xl md:text-left">
+              <h1 className="text-center text-3xl font-bold md:text-left lg:text-3xl">
                 Know More About <span>Rent</span>
                 <span className="text-color-50">Wheel</span>
               </h1>
-              <p className="max-w-[400px] lg:max-w-[500px] text-center text-base font-normal text-color-200 md:text-left">
+              <p className="max-w-[400px] text-center text-base font-normal text-color-200 md:text-left lg:max-w-[500px]">
                 Welcome to <b>RentWheel</b>, your trusted partner in hassle-free
                 car rental solutions. With a commitment to providing top-quality
                 vehicles, exceptional customer service, and unbeatable value, we
@@ -60,7 +60,7 @@ const About = () => {
           </div>
 
           <div className="flex justify-center">
-            <img src={AboutImage} alt="" />
+            <img src={AboutImage} alt="An image of a car" loading="lazy" />
           </div>
         </div>
       </Container>

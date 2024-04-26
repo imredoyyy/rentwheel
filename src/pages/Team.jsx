@@ -35,6 +35,7 @@ const Team = () => {
                     src={member.image}
                     alt={member.name}
                     className="rounded-2xl"
+                    loading="lazy"
                   />
                 </div>
                 <div className="flex flex-col items-center gap-2 px-8 py-6">
