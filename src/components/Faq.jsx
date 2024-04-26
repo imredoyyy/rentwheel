@@ -17,7 +17,6 @@ const Faq = () => {
   return (
     <Container>
       <div className="flex flex-col gap-4">
-
         {/* Section Heading & description */}
         <div className="flex flex-col items-center gap-2">
           <h1 className="text-center text-3xl font-bold">
@@ -31,7 +30,6 @@ const Faq = () => {
 
         {/* ======== FAQ Container ======== */}
         <div className="flex flex-col gap-2 px-8 py-6 shadow-lg ring-black">
-
           {/* FAQ 1 */}
           <div className="flex flex-col gap-1 shadow-sm">
             <div
@@ -42,7 +40,7 @@ const Faq = () => {
               } flex cursor-pointer items-center rounded-[6px] px-4 py-3 transition-all duration-500`}
               onClick={() => handleAccordion(0)}
             >
-              <h2 className="text-base md:text-lg font-semibold">
+              <h2 className="text-base font-semibold md:text-lg">
                 1. Question: How old do I need to be to rent a car?
               </h2>{" "}
               &nbsp;
@@ -59,7 +57,7 @@ const Faq = () => {
             <div
               className={`${
                 activeAccordion === 0
-                  ? "max-h-[10rem] overflow-visible py-4"
+                  ? "max-h-[20rem] overflow-visible py-4"
                   : "max-h-0 overflow-hidden"
               }  px-6 text-color-200 transition-all duration-500`}
             >
@@ -78,7 +76,7 @@ const Faq = () => {
               } flex cursor-pointer items-center rounded-[6px] px-4 py-3 transition-all duration-500`}
               onClick={() => handleAccordion(1)}
             >
-              <h2 className="text-base md:text-lg font-semibold">
+              <h2 className="text-base font-semibold md:text-lg">
                 2. Question: What documents do I need to rent a car?
               </h2>{" "}
               &nbsp;
@@ -95,7 +93,7 @@ const Faq = () => {
             <div
               className={`${
                 activeAccordion === 1
-                  ? "max-h-[10rem] overflow-visible py-4"
+                  ? "max-h-[20rem] overflow-visible py-4"
                   : "max-h-0 overflow-hidden"
               }  px-6 text-color-200 transition-all duration-500`}
             >
@@ -116,7 +114,7 @@ const Faq = () => {
               } flex cursor-pointer items-center rounded-[6px] px-4 py-3 transition-all duration-500`}
               onClick={() => handleAccordion(2)}
             >
-              <h2 className="text-base md:text-lg font-semibold">
+              <h2 className="text-base font-semibold md:text-lg">
                 3. Question: What happens if I return the car late?
               </h2>{" "}
               &nbsp;
@@ -133,7 +131,7 @@ const Faq = () => {
             <div
               className={`${
                 activeAccordion === 2
-                  ? "max-h-[10rem] overflow-visible py-4"
+                  ? "max-h-[20rem] overflow-visible py-4"
                   : "max-h-0 overflow-hidden"
               }  px-6 text-color-200 transition-all duration-500`}
             >
@@ -154,7 +152,7 @@ const Faq = () => {
               } flex cursor-pointer items-center rounded-[6px] px-4 py-3 transition-all duration-500`}
               onClick={() => handleAccordion(3)}
             >
-              <h2 className="text-base md:text-lg font-semibold">
+              <h2 className="text-base font-semibold md:text-lg">
                 4. Question: What should I do in case of an accident or
                 breakdown?
               </h2>{" "}
@@ -172,7 +170,7 @@ const Faq = () => {
             <div
               className={`${
                 activeAccordion === 3
-                  ? "max-h-[10rem] overflow-visible py-4"
+                  ? "max-h-[20rem] overflow-visible py-4"
                   : "max-h-0 overflow-hidden"
               }  px-6 text-color-200 transition-all duration-500`}
             >
