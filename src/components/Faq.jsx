@@ -59,7 +59,7 @@ const Faq = () => {
             <div
               className={`${
                 activeAccordion === 0
-                  ? "max-h-[10rem] overflow-visible py-4"
+                  ? "max-h-[20rem] overflow-visible py-4"
                   : "max-h-0 overflow-hidden"
               }  px-6 text-color-200 transition-all duration-500`}
             >
@@ -95,7 +95,7 @@ const Faq = () => {
             <div
               className={`${
                 activeAccordion === 1
-                  ? "max-h-[10rem] overflow-visible py-4"
+                  ? "max-h-[20rem] overflow-visible py-4"
                   : "max-h-0 overflow-hidden"
               }  px-6 text-color-200 transition-all duration-500`}
             >
@@ -133,7 +133,7 @@ const Faq = () => {
             <div
               className={`${
                 activeAccordion === 2
-                  ? "max-h-[10rem] overflow-visible py-4"
+                  ? "max-h-[20rem] overflow-visible py-4"
                   : "max-h-0 overflow-hidden"
               }  px-6 text-color-200 transition-all duration-500`}
             >
@@ -172,7 +172,7 @@ const Faq = () => {
             <div
               className={`${
                 activeAccordion === 3
-                  ? "max-h-[10rem] overflow-visible py-4"
+                  ? "max-h-[20rem] overflow-visible py-4"
                   : "max-h-0 overflow-hidden"
               }  px-6 text-color-200 transition-all duration-500`}
             >
