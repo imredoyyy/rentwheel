@@ -60,7 +60,7 @@ const Header = () => {
     <header
       className={`${scrolled ? "border-neutral-200 bg-white/50 backdrop-blur-xl" : "border-transparent bg-transparent"} sticky top-0 z-30 w-full border-b`}
     >
-      <div className="mx-auto flex w-full items-center justify-between p-4 md:px-6">
+      <div className="mx-auto flex w-full max-w-7xl items-center justify-between px-4 py-4 md:px-8">
         <Link target="_self" to="/">
           <img src={Logo} alt="" className="w-[11rem] lg:w-[13rem]" />
         </Link>
