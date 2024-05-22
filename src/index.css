@@ -22,16 +22,17 @@
 
 body {
   color: var(--blk);
+  padding-top: 70px;
   overflow-x: hidden;
 }
 
-.react-multi-carousel-track  {
+.react-multi-carousel-track {
   gap: 2rem;
 }
 
 body::-webkit-scrollbar,
 .modal::-webkit-scrollbar {
-  width:6px;
+  width: 6px;
 }
 
 body::-webkit-scrollbar-track,

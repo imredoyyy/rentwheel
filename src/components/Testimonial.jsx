@@ -9,7 +9,7 @@ import {
 } from "./ui/Carousel";
 
 // Icon
-import { Car, Quote } from "lucide-react";
+import { Quote } from "lucide-react";
 
 const Testimonial = () => {
   return (
@@ -19,7 +19,7 @@ const Testimonial = () => {
           <div className="flex flex-col items-center gap-2">
             <h3 className="text-xl font-medium text-color-50">Testimonial</h3>
             <h1 className="text-3xl font-bold capitalize">
-              What our client's had to say
+              What our client&apos;s had to say
             </h1>
             <p className="max-w-[580px] text-center font-normal ">
               Explore the firsthand experiences of our clients! Read their
@@ -37,13 +37,16 @@ const Testimonial = () => {
           >
             <CarouselContent>
               {reviewData.map((data, index) => (
-                <CarouselItem className="shadow-sm ring-black md:basis-1/2">
+                <CarouselItem
+                  key={index}
+                  className="shadow-sm ring-black md:basis-1/2"
+                >
                   <div
                     className="flex flex-col gap-6 rounded-lg bg-neutral-100 px-10 py-6"
                     key={index}
                   >
                     <h4 className="text-lg font-medium">
-                      "{data.review}"
+                      &quot;{data.review}&quot;
                     </h4>
 
                     <div className="flex flex-col">
@@ -52,7 +55,8 @@ const Testimonial = () => {
                           <img
                             src={data.image}
                             className="size-14 rounded-full object-contain"
-                            alt={data.name} loading="lazy"
+                            alt={data.name}
+                            loading="lazy"
                           />
                           <div className="flex flex-col">
                             <h2 className="text-xl font-semibold">

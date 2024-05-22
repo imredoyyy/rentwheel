@@ -5,7 +5,7 @@ import Header from "./Layout/Header";
 import Footer from "./Layout/Footer";
 
 // Pages
-import Home from './pages/Home'
+import Home from "./pages/Home";
 import Contact from "./pages/Contact";
 import About from "./pages/About";
 import Team from "./pages/Team";

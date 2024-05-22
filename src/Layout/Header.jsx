@@ -7,7 +7,7 @@ import Button from "../General/Button";
 import IconButton from "../General/IconButton";
 import useScroll from "../hooks/use-scroll";
 import useWindowSize from "../hooks/use-window-size";
-import Logo from "../../public/logo.png";
+import Logo from "/logo.png";
 
 // Icons
 import { Menu, X } from "lucide-react";
@@ -23,10 +23,10 @@ const Header = () => {
 
   // Add bottom border color if scrollY > 40
   const scrolled = useScroll(40);
-  
+
   // Open/Close Mobile Navigation
   const [isOpen, setIsOpen] = useState(false);
-  
+
   const toggleMenu = () => {
     if (isOpen) {
       setIsOpen(false);
@@ -36,7 +36,7 @@ const Header = () => {
       disablePageScroll();
     }
   };
-  
+
   // Close Mobile Navigation after clicking on any nav link
   const handleClick = () => {
     const timeoutId = setTimeout(() => {
@@ -45,20 +45,20 @@ const Header = () => {
       clearTimeout(timeoutId);
     }, 500);
   };
-  
+
   // Close Mobile Navigation if it's currently opened & window size is greater than 849px
   const size = useWindowSize();
-  
+
   useEffect(() => {
     if (size.width > 849 && isOpen) {
       setIsOpen(false);
       enablePageScroll();
     }
-  });
+  }, [isOpen, size]);
 
   return (
     <header
-      className={`${scrolled ? "border-neutral-200 bg-white/50 backdrop-blur-xl" : "border-transparent bg-transparent"} top-0 z-30 w-full border-b`}
+      className={`${scrolled ? "border-neutral-200 bg-white/50 backdrop-blur-xl" : "border-transparent bg-transparent"} fixed top-0 z-30 w-full border-b`}
     >
       <div className="mx-auto flex w-full items-center justify-between p-4 md:px-6">
         <Link target="_self" to="/">
