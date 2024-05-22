@@ -321,7 +321,7 @@ const BookCar = () => {
               </div>
 
               {/* Pick Up Date */}
-              <div className="flex flex-col gap-6">
+              <div className="flex flex-col gap-6 w-full">
                 <label
                   htmlFor="pickDate"
                   className="flex items-center text-lg font-medium"
@@ -339,7 +339,7 @@ const BookCar = () => {
               </div>
 
               {/* Drop-off Date */}
-              <div className="flex flex-col gap-6">
+              <div className="flex flex-col gap-6 w-full">
                 <label
                   htmlFor="dropDate"
                   className="flex items-center text-lg font-medium"
